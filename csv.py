@@ -10,6 +10,7 @@ st.title("🗂️ S3 CSV Viewer & Explorer")
 # Load S3 credentials from Streamlit secrets
 AWS_ACCESS_KEY = st.secrets["aws_access_key_id"]
 AWS_SECRET_KEY = st.secrets["aws_secret_access_key"]
+REGION = st.secrets.get("region_name", "us-east-2")
 BUCKET_NAME = st.secrets["bucket"]
 CSV_KEY = st.secrets["csv_key"]  # Example: 'your-folder/your-file.csv'
 
